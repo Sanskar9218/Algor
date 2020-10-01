@@ -55,7 +55,7 @@ class Main {
 
   public static void main(String args[]) {
 
-    int[] array = { 6, 5, 12, 10, 9, 1 };
+  try{ int[] array = { 6, 5, 12, 10, 9, 1 };
 
     Main ob = new Main();
 
@@ -63,7 +63,8 @@ class Main {
 
     System.out.println("Sorted Array Is following -> :");
     System.out.println(Arrays.toString(array));
-  }
+  }catch(Exception e){};
+}
 }
 import java.util.*;
 public class quick
@@ -81,7 +82,7 @@ public class quick
    }while(a[i]<=pivot);
   do
    {
-    j--; 
+    j--;
    }while(a[j]>pivot);
  if(i<j)
  {
@@ -123,6 +124,6 @@ obj.quicksort(a,0,n-1);
 for(int i=0;i<=n-1;i++)
 {
 System.out.println(a[i]);
-}  
+}
 }
 }
